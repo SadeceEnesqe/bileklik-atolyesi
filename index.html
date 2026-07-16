@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bileklik Atölyesi</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0d0d0d;
+color:white;
+}
+
+header{
+
+background:#111;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:999;
+border-bottom:1px solid #c9a227;
+
+}
+
+.logo{
+
+font-size:30px;
+font-weight:700;
+color:#d4af37;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:white;
+margin-left:30px;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#d4af37;
+
+}
+
+.hero{
+
+padding:90px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:60px;
+
+}
+
+.hero h1{
+
+font-size:65px;
+line-height:75px;
+margin-bottom:20px;
+
+}
+
+.hero span{
+
+color:#d4af37;
+
+}
+
+.hero p{
+
+font-size:20px;
+opacity:.8;
+margin-bottom:30px;
+
+}
+
+.btn{
+
+display:inline-block;
+padding:15px 35px;
+background:#d4af37;
+color:black;
+font-weight:bold;
+border-radius:8px;
+text-decoration:none;
+
+}
+
+.hero img{
+
+width:100%;
+border-radius:25px;
+box-shadow:0 0 40px rgba(212,175,55,.25);
+
+}
+
+.products{
+
+padding:80px 8%;
+
+}
+
+.products h2{
+
+text-align:center;
+font-size:45px;
+margin-bottom:50px;
+color:#d4af37;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+
+}
+
+.card{
+
+background:#171717;
+border:1px solid #d4af37;
+border-radius:18px;
+overflow:hidden;
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:100%;
+height:250px;
+object-fit:cover;
+
+}
+
+.info{
+
+padding:20px;
+
+}
+
+.info h3{
+
+font-size:24px;
+
+}
+
+.price{
+
+font-size:28px;
+font-weight:bold;
+color:#d4af37;
+margin:15px 0;
+
+}
+
+button{
+
+width:100%;
+padding:14px;
+background:#d4af37;
+border:none;
+font-weight:bold;
+font-size:16px;
+cursor:pointer;
+border-radius:8px;
+
+}
+
+footer{
+
+margin-top:80px;
+padding:35px;
+text-align:center;
+background:#111;
+border-top:1px solid #d4af37;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:45px;
+line-height:55px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Bileklik Atölyesi</div>
+
+<nav>
+
+<a href="#">Ana Sayfa</a>
+
+<a href="#">Ürünler</a>
+
+<a href="#">İletişim</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Tarzını <span>Bileğinde</span> Taşı</h1>
+
+<p>
+El yapımı bileklikler • Türkiye Geneli Kargo
+</p>
+
+<a href="https://wa.me/905431256172" class="btn">
+WhatsApp Sipariş
+</a>
+
+</div>
+
+<img src="hero.jpg">
+
+</section>
+
+<section class="products">
+
+<h2>Popüler Modeller</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="snow.jpg">
+
+<div class="info">
+
+<h3>Snow</h3>
+
+<p>Beyaz zarif tasarım.</p>
+
+<div class="price">69 TL</div>
+
+<button>Sepete Ekle</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="ocean.jpg">
+
+<div class="info">
+
+<h3>Ocean</h3>
+
+<p>Mavi tonlarının uyumu.</p>
+
+<div class="price">69 TL</div>
+
+<button>Sepete Ekle</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="ruby.jpg">
+
+<div class="info">
+
+<h3>Ruby</h3>
+
+<p>Kırmızı beyaz kombin.</p>
+
+<div class="price">69 TL</div>
+
+<button>Sepete Ekle</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="gold.jpg">
+
+<div class="info">
+
+<h3>Gold Shine</h3>
+
+<p>Gold detaylı tasarım.</p>
+
+<div class="price">69 TL</div>
+
+<button>Sepete Ekle</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Bileklik Atölyesi</h3>
+
+<p>Instagram: @bileklik__atolyesi</p>
+
+<p>WhatsApp: 0543 125 61 72</p>
+
+<p>© 2026 Tasarım: Enes Malik Yıldırım</p>
+
+</footer>
+
+</body>
+
+</html>
